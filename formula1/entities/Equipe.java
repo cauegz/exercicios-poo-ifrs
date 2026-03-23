@@ -1,14 +1,15 @@
-import java.util.Arrays;
+package entities;
+
+import java.util.ArrayList;
 
 public class Equipe {
     private String nome;
     private int anoFund;
-    private Patrocinadores[] patrocinadores;
+    private final ArrayList<Patrocinador> patrocinadores = new ArrayList<>();
 
-    public Equipe(String nome, int anoFund, Patrocinadores[] patrocinadores) {
+    public Equipe(String nome, int anoFund) {
         this.nome = nome;
         this.anoFund = anoFund;
-        this.patrocinadores = patrocinadores;
     }
 
     public String getNome() {
@@ -27,12 +28,16 @@ public class Equipe {
         this.anoFund = anoFund;
     }
 
-    public Patrocinadores[] getPatrocinadores() {
+    public ArrayList<Patrocinador> getPatrocinadores() {
         return patrocinadores;
     }
 
-    public void setPatrocinadores(Patrocinadores[] patrocinadores) {
-        this.patrocinadores = patrocinadores;
+    public void addPatrocinador (Patrocinador patrocinador){
+        patrocinadores.add(patrocinador);
+    }
+
+    public void removePatrocinador (Patrocinador patrocinador){
+        patrocinadores.remove(patrocinador);
     }
 
     @Override
@@ -40,7 +45,7 @@ public class Equipe {
         return "Equipe{" +
                 "nome='" + nome + '\'' +
                 ", anoFund=" + anoFund +
-                ", patrocinadores=" + Arrays.toString(patrocinadores) +
+                ", patrocinadores=" + patrocinadores.toString() +
                 '}';
     }
 }

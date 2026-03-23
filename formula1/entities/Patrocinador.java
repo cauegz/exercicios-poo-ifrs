@@ -1,8 +1,10 @@
-public class Patrocinadores {
+package entities;
+
+public class Patrocinador {
     private String nome;
     private double valorPat;
 
-    public Patrocinadores(String nome, double valorPat) {
+    public Patrocinador(String nome, double valorPat) {
         this.nome = nome;
         this.valorPat = valorPat;
     }

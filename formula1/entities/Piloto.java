@@ -1,3 +1,5 @@
+package entities;
+
 public class Piloto {
     private String nome;
     private int idade;

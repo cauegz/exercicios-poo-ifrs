@@ -1,3 +1,5 @@
+package entities;
+
 public class CarroF1 {
     private int numero;
     private int posicao;

@@ -17,6 +17,6 @@ Este repositório contém os exercícios realizados durante a formação em **De
 ### Passos
 
 1. Clone o repositório:
-   `git clone https://github.com/seu-usuario/projeto-java-ifrs-canoas.git`
+   `git clone https://github.com/cauegz/exercicios-poo-ifrs.git`
 2. Abra o projeto na sua IDE (IntelliJ IDEA, Eclipse, etc.).
 3. Execute os exercícios conforme a necessidade.

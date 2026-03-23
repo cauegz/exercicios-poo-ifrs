@@ -1,0 +1,16 @@
+# Ignorar pasta .idea do IntelliJ
+.idea/
+
+# Ignorar arquivos de compilação e arquivos temporários do Java
+*.class
+*.log
+*.jar
+*.war
+*.ear
+*.d*
+*.swp
+*~
+
+# Ignorar arquivos temporários criados pelo sistema operacional
+.DS_Store  # Para sistemas macOS
+Thumbs.db  # Para sistemas Windows

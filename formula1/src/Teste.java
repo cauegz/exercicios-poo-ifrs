@@ -1,6 +1,6 @@
-package formula1.src;
+package src;
 
-import formula1.entities.*;
+import entities.*;
 
 public class Teste {
     public static void main(String[] args) {

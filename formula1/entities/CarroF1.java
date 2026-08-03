@@ -1,4 +1,4 @@
-package formula1.entities;
+package entities;
 
 public class CarroF1 {
     private int numero;

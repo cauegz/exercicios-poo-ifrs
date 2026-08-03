@@ -1,4 +1,4 @@
-package formula1.entities;
+package entities;
 
 public class Engenheiro extends Pessoa{
     private Piloto piloto;

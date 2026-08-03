@@ -16,5 +16,6 @@ public class Main {
                 retorno[i] = estudantes[i];
             }
         }
+        return retorno;
     }
 }

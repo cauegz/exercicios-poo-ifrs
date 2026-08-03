@@ -11,6 +11,10 @@ public class Main {
 
     public Estudante[] estudantesAprovados(Estudante[] estudantes){
         Estudante[] retorno = new Estudante[estudantes.length];
-
+        for (int i = 0; i < estudantes.length; i++) {
+            if(estudantes[i].calculaMedia() >= 6){
+                retorno[i] = estudantes[i];
+            }
+        }
     }
 }

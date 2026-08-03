@@ -25,6 +25,17 @@ public class Estudante {
         return Arrays.stream(notas).average().orElse(0);
     }
 
+    public double calculaMedia(int[] pesos){
+
+        double soma = 0.0;
+        int somaPesos = 0;
+        for (int i = 0; i < notas.length; i++) {
+            soma += notas[i] * pesos[i];
+            somaPesos += pesos[i];
+        }
+        return soma/somaPesos;
+    }
+
     public double menorNota(){
         return Arrays.stream(notas).min().orElse(0);
     }

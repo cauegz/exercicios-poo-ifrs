@@ -26,7 +26,7 @@ public class Estudante {
     }
 
     public double calculaMedia(int[] pesos){
-
+        if(pesos.length != notas.length) return -1;
         double soma = 0.0;
         int somaPesos = 0;
         for (int i = 0; i < notas.length; i++) {

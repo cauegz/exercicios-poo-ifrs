@@ -36,4 +36,12 @@ public class Estudante {
     public double[] getNotas() {
         return notas;
     }
+
+    @Override
+    public String toString() {
+        return "Estudante{" +
+                "nome='" + nome + '\'' +
+                ", notas=" + Arrays.toString(notas) +
+                '}';
+    }
 }

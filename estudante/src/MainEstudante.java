@@ -4,7 +4,7 @@ import entities.Estudante;
 
 import java.util.Arrays;
 
-public class Main {
+public class MainEstudante {
     static void main(String[] args) {
         Estudante[] array = new Estudante[2];
         array[0] = new Estudante("joao");

@@ -1,6 +1,6 @@
 package entities;
 
-public class Base {
+abstract class Base {
     private String titulo;
 
     public Base(String titulo) {

@@ -1,13 +1,13 @@
 package entities;
 
-public class Livro extends Base{
-    private SituacaoLivro situacao = SituacaoLivro.DISPONIVEL;
-    private boolean disponivel = true;
+import static entities.SituacaoLivro.*;
 
-    public Livro(String titulo, SituacaoLivro situacao, boolean disponivel) {
+public class Livro extends Base{
+    private SituacaoLivro situacao = DISPONIVEL;
+
+    public Livro(String titulo, SituacaoLivro situacao) {
         super(titulo);
         this.situacao = situacao;
-        this.disponivel = disponivel;
     }
 
     public Livro(String titulo) {
@@ -22,11 +22,9 @@ public class Livro extends Base{
         this.situacao = situacao;
     }
 
-    public boolean isDisponivel() {
-        return disponivel;
-    }
-
-    public void setDisponivel(boolean disponivel) {
-        this.disponivel = disponivel;
+    public boolean emprestar(){
+        if(this.situacao != DISPONIVEL) return false;
+        this.situacao = EMPRESTADO;
+        return true;
     }
 }

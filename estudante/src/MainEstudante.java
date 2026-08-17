@@ -17,16 +17,16 @@ public class MainEstudante {
         for (int i = 0; i < pesos.length; i++) {
             pesos[i] = i+1;
         }
-        System.out.println("\n--------------------------\nESTUDANTES APROVADOS\n--------------------------");
+        System.out.println("\n--------------------------\nESTUDANTES APROVADOS\n--------------------------\n");
         Estudante[] aprovados = estudantesAprovados(array);
         for (int i = 0; i < aprovados.length; i++) {
             System.out.println((i+1) + " - " + aprovados[i]);
             System.out.print("\n--------------------------\n\n");
         }
-        System.out.println("Média do estudante " + array[0].getNome() + ": ");
+        System.out.print("Média do estudante " + array[0].getNome() + ": ");
         System.out.print(array[0].calculaMedia(pesos));
-        System.out.println("Média do estudante " + array[1].getNome() + ": ");
-        System.out.println(array[1].calculaMedia(pesos));
+        System.out.print("\nMédia do estudante " + array[1].getNome() + ": ");
+        System.out.print(array[1].calculaMedia(pesos));
     }
 
     public static Estudante[] estudantesAprovados(Estudante[] estudantes){

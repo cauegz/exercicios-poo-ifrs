@@ -11,8 +11,13 @@ public class Main {
         array[0].insereNotas();
         array[1] = new Estudante("maria");
         array[1].insereNotas();
-
+        int[] pesos = new int[5];
+        for (int i = 0; i < pesos.length; i++) {
+            pesos[i] = i+1;
+        }
         System.out.println(Arrays.toString(estudantesAprovados(array)));
+        System.out.println(array[0].calculaMedia(pesos));
+        System.out.println(array[1].calculaMedia(pesos));
     }
 
     public static Estudante[] estudantesAprovados(Estudante[] estudantes){

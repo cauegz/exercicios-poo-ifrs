@@ -36,4 +36,13 @@ public class Estudante {
     public double[] getNotas() {
         return notas;
     }
+
+    @Override
+    public String toString() {
+        String notasString = "";
+        for (int i = 0; i < notas.length; i++) {
+            notasString += "[" + String.valueOf(notas[i]) + "]";
+        }
+        return "Nome: " + getNome() + "\nNotas: " + notasString;
+    }
 }
